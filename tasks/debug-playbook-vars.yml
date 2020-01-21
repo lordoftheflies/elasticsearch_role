@@ -1,0 +1,14 @@
+---
+# roles/ElasticSearch/tasks/debug-playbook-vars.yml
+
+# Debug other values or specific values you want printed last
+
+
+- name: "Debug - ansible playbook variable values"
+  debug: msg="{{ vars }}"
+  when: ElasticSearch_debug
+
+
+- name: "Debug value of playbook vars"
+  debug: msg="{{ vars | to_yaml }}"
+  when: ElasticSearch_debug

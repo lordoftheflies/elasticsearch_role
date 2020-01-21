@@ -1,0 +1,26 @@
+---
+# Ansible Role: ElasticSearch
+
+dependencies: []
+
+galaxy_info:
+  author: 'László Hegedűs'
+  description: 'Ansible Galaxy role for ElasticSearch.'
+  company: 'Cherubits'
+  license: MIT
+  min_ansible_version: '2.4'
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - precise
+        - trusty
+        - xenial
+  galaxy_tags:
+    - ansible-galaxy
+    - ansible-role
+    - ansible
+    - elasticsearch
+    - ubuntu
+    - cherubits
