@@ -1,32 +1,35 @@
 # Ansible Role: ElasticSearch
 
-## Status
-
 [![Build Status](https://travis-ci.org/lordoftheflies/ansible-role-elasticsearch.svg?branch=master)](https://travis-ci.org/lordoftheflies/ansible-role-elasticsearch)
 [![Travis CI](http://img.shields.io/travis/lordoftheflies/ansible-role-elasticsearch/default.svg?style=flat)](http://travis-ci.org/lordoftheflies/ansible-role-elasticsearch/default)
-[![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-lightgrey.svg?style=flat)](#)
+[![pipeline status](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-elasticsearch/badges/master/pipeline.svg)](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-elasticsearch/commits/master)
+[![coverage report](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-elasticsearch/badges/master/coverage.svg)](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-elasticsearch/commits/master)
+[![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-orange.svg?style=flat)](#)
 
 ## Description
 
-Ansible Galaxy role for ElasticSearch.
+[Ansible Galaxy](https://galaxy.ansible.com/) role for [ElasticSearch](https://www.elastic.co/products/elasticsearch).
 
-## Roadmap
+## Boards
 
-* [ROADMAP.md](ROADMAP.md)
-
+* [ROADMAP](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-elasticsearch/-/boards/97)
+* [DEVELOPMENT](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-elasticsearch/-/boards/98)
+* [VERIFICATION](https://gitlab.cherubits.hu/oss/ansible-galaxy-roles/ansible-role-elasticsearch/-/boards/99)
 
 ## Requirements
 
+* [Python 3.4+](https://python.io/)
+
 ### Production
 
-* Ansible
+* [Ansible](https://ansible.com/)
 
 ### For Local Testing
 
 * [Vagrant](https://www.vagrantup.com/) - (Tested using version 2.1.1)
 * Vagrant plugins:
-  * [vagrant-disksize (0.1.2)](https://github.com/lordoftheflies/vagrant-plugin-disksize)
-  * vagrant-vbguest (0.15.2) - Recommended [vagrant-vbguest](https://github.com/lordoftheflies/vagrant-plugin-vbguest)
+  * [vagrant-plugin-disksize (0.1.2)](https://github.com/lordoftheflies/vagrant-plugin-disksize)
+  * [vagrant-plugin-vbguest (0.15.2)](https://github.com/lordoftheflies/vagrant-plugin-vbguest)
   * vai (0.9.3) - For testing with multiple vms [vagrant-plugin-vai](https://github.com/lordoftheflies/vagrant-plugin-vai) 
 * [Virtual Box](https://www.virtualbox.org/)
   * Tested using Version 5.2.14 r123301 (Qt5.6.1) 

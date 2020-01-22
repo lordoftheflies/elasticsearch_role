@@ -1,4 +1,4 @@
 ---
 # roles/ElasticSearch/vars/debian.yml
 
-ElasticSearch_package_extension: 'rpm'
+elasticsearch_package_extension: 'rpm'

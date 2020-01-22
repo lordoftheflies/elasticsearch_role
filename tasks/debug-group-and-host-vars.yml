@@ -5,4 +5,4 @@
 
 - name: "Debug - group and host vars from {{ hostvars[inventory_hostname] }}"
   debug: msg="{{ hostvars[inventory_hostname] }}"
-  when: ElasticSearch_debug
+  when: elasticsearch_debug

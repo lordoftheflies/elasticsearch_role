@@ -1,5 +1,5 @@
 ---
-# group_vars/all/example_defaults.yml
+# group_vars/all/defaults.yml
 
 ## controller user vars
 

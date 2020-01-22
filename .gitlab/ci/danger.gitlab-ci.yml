@@ -3,6 +3,19 @@
   image: ruby:2.4
   before_script:
     - gem install danger-gitlab --version '~> 5.0'
+    - gem install danger-prose
+    - gem install danger-auto_label
+    - gem install danger-changelog, '~> 0.6.0'
+    - gem install danger-code_coverage
+    - gem install danger-commit_lint
+    - gem install danger-junit
+    - gem install danger-mention
+    - gem install danger-pep8
+    - gem install danger-shellcheck
+    - gem install danger-simplecov_json
+    - gem install danger-slack
+    - gem install danger-suggester
+    - gem install danger-todoist
   script:
     - danger
   only:

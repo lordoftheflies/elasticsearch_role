@@ -1,5 +1,5 @@
 # -*- mode: ruby -*-
-  # vi: set ft=ruby ts=2 sw=2 tw=0 et :
+# vi: set ft=ruby ts=2 sw=2 tw=0 et :
 # bump your IPs and include version when adding new boxes
 # https://app.vagrantup.com/debian
 

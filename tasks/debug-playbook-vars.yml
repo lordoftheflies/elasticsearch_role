@@ -6,9 +6,9 @@
 
 - name: "Debug - ansible playbook variable values"
   debug: msg="{{ vars }}"
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 
 
 - name: "Debug value of playbook vars"
   debug: msg="{{ vars | to_yaml }}"
-  when: ElasticSearch_debug
+  when: elasticsearch_debug

@@ -7,7 +7,7 @@
 - name: "Debug values for gathered from group and host variables"
   include: "{{ fact_role_path }}/tasks/debug-group-and-host-vars.yml"
 
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 
 # Include /tasks/debug-playbook-vars.yml
 
@@ -15,7 +15,7 @@
 - name: "Debug - ansible playbook variable values"
   include: "{{ fact_role_path }}/tasks/debug-playbook-vars.yml"
 
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 
 # Any custom vars you want printed last
 #
@@ -26,30 +26,30 @@
   with_items:
     - inventory_hostname
     - ansible_hostname
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 
 
 - name: "Debug - ansible playbook variable values"
   debug: msg="{{ ansible_hostname }}"
 
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 
 
 - name: "Debug - ansible playbook variable values"
   debug: msg="{{ fact_role_path }}"
 
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 
 ## Distribution
 - name: "Debug - ansible_distribution"
   debug: msg="{{ ansible_distribution }}"
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 - name: "Debug - ansible_distribution_release"
   debug: msg="{{ ansible_distribution_release }}"
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 - name: "Debug - ansible_distribution_version"
   debug: msg="{{ ansible_distribution_version }}"
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
 - name: "Debug - ansible_distribution_major_version"
   debug: msg="{{ ansible_distribution_major_version }}"
-  when: ElasticSearch_debug
+  when: elasticsearch_debug
